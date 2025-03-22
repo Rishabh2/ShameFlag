@@ -3,34 +3,41 @@
 
 <head>
     <style>
+        h1 {
+            display: inline;
+        }
+        .button {
+            font-size: x-large;
+        }
         .mainRunner {
             border: 1px solid #000;
         }
-
         .floor {
             border: 1px solid #00f;
-            position: relative;
+            position: absolute;
             z-index: 1;
+            display: block;
+            margin: auto;
         }
 
         .item {
             border: 1px solid #f00;
             position: absolute;
-            top: 200px;
-            left: 20px;
+            top: 150px;
+            left: 50px;
             z-index: 2;
         }
 
         .character {
             border: 1px solid #0f0;
             position: absolute;
-            z-index: 1;
-            top: 700px;
-            left: 800px;
+            z-index: 2;
+            top: 550px;
+            left: 650px;
         }
     </style>
     <h1>Secret Demo</h1>
-    <h1 onclick="roll()">🎲</h1>
+    <button type="button" class="button" onclick="roll()">🎲</button>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
