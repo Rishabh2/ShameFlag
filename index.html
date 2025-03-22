@@ -9,9 +9,6 @@
         .button {
             font-size: x-large;
         }
-        .mainRunner {
-            border: 1px solid #000;
-        }
         .floor {
             border: 1px solid #00f;
             position: absolute;
@@ -43,7 +40,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 
-<body>
+<body onload="roll()">
     <div class="mainRunner">
         <img class="floor" id="floor" src="floor1.png"/>
         <img class="item" id="item" src="item1.png"/>
