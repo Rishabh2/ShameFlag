@@ -2,7 +2,7 @@ function roll() {
     console.log("roll start");
 
     const itemCount = 2;
-    const floorCount = 2;
+    const floorCount = 5;
     const charCount = 2;
 
     const floor = document.getElementById("floor");
