@@ -10,7 +10,6 @@
             font-size: x-large;
         }
         .floor {
-            border: 1px solid #00f;
             position: absolute;
             z-index: 1;
             display: block;
@@ -18,7 +17,6 @@
         }
 
         .item {
-            border: 1px solid #f00;
             position: absolute;
             top: 150px;
             left: 50px;
@@ -26,11 +24,18 @@
         }
 
         .character {
-            border: 1px solid #0f0;
             position: absolute;
             z-index: 2;
             top: 550px;
             left: 650px;
+        }
+
+        .pickup {
+            position: absolute;
+            z-index: 3;
+            top: 400px;
+            left: 400px;
+            display: none;
         }
     </style>
     <title>EMM</title>
@@ -46,6 +51,9 @@
         <img class="floor" id="floor" src="floor1.png"/>
         <img class="item" id="item" src="item1.png"/>
         <img class="character" id="character" src="character1.png"/>
+        <img class="pickup" id="pickup1" src="pickup1.png"/>
+        <img class="pickup" id="pickup2" src="pickup2.png"/>
+        <img class="pickup" id="pickup3" src="pickup3.png"/>
     </div>
     <script src="script.js"></script>
 </body>
