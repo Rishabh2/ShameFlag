@@ -17,8 +17,8 @@ function roll() {
     const pickups = [document.getElementById("pickup1"), document.getElementById("pickup2"), document.getElementById("pickup3")];
 
     // topmin, topmax, leftmin, leftmax
-    const itemranges = [100, 250, 50, 250];
-    const charranges = [400, 500, 900, 1050];
+    const itemranges = [50, 200, 25, 200];
+    const charranges = [275, 350, 725, 875];
     const pickupranges = [100, 600, 50, 1100];
 
     floor.src = "floor" + rrange(1, floorCount).toString() + ".png";
