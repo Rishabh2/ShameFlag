@@ -8,7 +8,7 @@ function roll() {
     const itemCount = 2;
     const floorCount = 5;
     const charCount = 2;
-    const pickupCount = 3;
+    const pickupCount = 7;
 
     const floor = document.getElementById("floor");
     const character = document.getElementById("character");
