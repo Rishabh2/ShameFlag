@@ -5,9 +5,9 @@ function rrange(min, max) { // inclusive
 function roll() {
     console.log("roll start");
 
-    const itemCount = 2;
+    const itemCount = 32;
     const floorCount = 5;
-    const charCount = 2;
+    const charCount = 6;
     const pickupCount = 7;
 
     const floor = document.getElementById("floor");
@@ -19,7 +19,7 @@ function roll() {
     // topmin, topmax, leftmin, leftmax
     const itemranges = [50, 200, 25, 200];
     const charranges = [275, 350, 725, 875];
-    const pickupranges = [100, 600, 50, 1100];
+    const pickupranges = [100, 550, 50, 1100];
 
     floor.src = "floor" + rrange(1, floorCount).toString() + ".png";
 
@@ -27,7 +27,14 @@ function roll() {
     character.style.top = rrange(charranges[0], charranges[1]).toString() + "px";
     character.style.left = rrange(charranges[2], charranges[3]).toString() + "px";
 
-    item.src = "item" + rrange(1, itemCount).toString() + ".png";
+    let itemNum = rrange(1, itemCount).toString();
+    if (Math.random() < 0.05) {
+        itemNum == "4";
+    }
+    if (itemNum == "11") {
+        itemNum += String.fromCharCode(rrange(97, 101));
+    }
+    item.src = "item" + itemNum + ".png";
     item.style.top = rrange(itemranges[0], itemranges[1]).toString() + "px";
     item.style.left = rrange(itemranges[2], itemranges[3]).toString() + "px";
 
