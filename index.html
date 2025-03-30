@@ -6,9 +6,11 @@
         h1 {
             display: inline;
         }
+
         .button {
             font-size: x-large;
         }
+
         .floor {
             position: absolute;
             z-index: 1;
@@ -20,21 +22,29 @@
             position: absolute;
             top: 150px;
             left: 50px;
-            z-index: 2;
+            z-index: 3;
         }
 
         .character {
             position: absolute;
-            z-index: 2;
+            z-index: 3;
             top: 550px;
             left: 650px;
         }
 
         .pickup {
             position: absolute;
-            z-index: 3;
+            z-index: 4;
             top: 400px;
             left: 400px;
+            display: none;
+        }
+
+        .boss {
+            position: absolute;
+            z-index: 2;
+            top: 300px;
+            left: 500px;
             display: none;
         }
     </style>
@@ -48,12 +58,13 @@
 
 <body onload="roll()">
     <div class="mainRunner">
-        <img class="floor" id="floor" src="floor1.png"/>
-        <img class="item" id="item" src="item1.png"/>
-        <img class="character" id="character" src="character1.png"/>
-        <img class="pickup" id="pickup1" src="pickup1.png"/>
-        <img class="pickup" id="pickup2" src="pickup2.png"/>
-        <img class="pickup" id="pickup3" src="pickup3.png"/>
+        <img class="floor" id="floor" src="floor1.png" />
+        <img class="item" id="item" src="item1.png" />
+        <img class="character" id="character" src="character1.png" />
+        <img class="pickup" id="pickup1" src="pickup1.png" />
+        <img class="pickup" id="pickup2" src="pickup2.png" />
+        <img class="pickup" id="pickup3" src="pickup3.png" />
+        <img class="boss" id="boss" src="boss3.png" />
     </div>
     <script src="script.js"></script>
 </body>
