@@ -46,7 +46,6 @@ function roll() {
     if (itemNum == "11") {
         itemNum += String.fromCharCode(rrange(97, 101));
     }
-    itemNum = "59";
     let itemExt = ".png";
     if (itemNum == "59") {
         itemExt = ".gif";
